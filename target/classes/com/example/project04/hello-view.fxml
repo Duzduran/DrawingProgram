@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" styleClass="background-color" stylesheets="@shape.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project04.HelloController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="648.0" prefWidth="960.0">
+         <left>
+            <SplitPane dividerPositions="0.4591439688715953" orientation="VERTICAL" prefHeight="516.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="160.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ListView fx:id="myListView" prefHeight="240.0" prefWidth="149.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="show" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </ListView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="100.0" minWidth="160.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@shape.css">
+                     <children>
+                        <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="-43.0" layoutY="23.0" prefHeight="193.0" prefWidth="149.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </left>
+         <top>
+            <GridPane fx:id="buttonPane" gridLinesVisible="true" prefHeight="70.0" prefWidth="959.0" stylesheets="@shape.css" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="69.1547737121582" minHeight="10.0" prefHeight="69.1547737121582" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ToggleButton fx:id="button1" mnemonicParsing="false" onAction="#rect" prefHeight="58.0" prefWidth="79.0" styleClass="first-button" translateX="12.0" GridPane.columnIndex="1" />
+                  <ToggleButton fx:id="button2" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="62.0" styleClass="second-button" textAlignment="CENTER" translateX="18.0" GridPane.columnIndex="2">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </ToggleButton>
+                  <ToggleButton fx:id="button3" mnemonicParsing="false" prefHeight="58.0" prefWidth="81.0" styleClass="third-button" translateX="10.0" GridPane.columnIndex="3" />
+                  <ToggleButton fx:id="button6" mnemonicParsing="false" prefHeight="57.0" prefWidth="79.0" styleClass="sixth-button" translateX="10.0" GridPane.columnIndex="6" />
+                  <ToggleButton fx:id="button4" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" styleClass="forth-button" GridPane.columnIndex="4" />
+                  <ToggleButton fx:id="button5" mnemonicParsing="false" prefHeight="51.0" prefWidth="85.0" styleClass="fifth-button" translateX="10.0" GridPane.columnIndex="5" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </top>
+         <center>
+            <Pane fx:id="myPane" onMouseClicked="#drawShape" prefHeight="554.0" prefWidth="806.0" styleClass="pane-color" BorderPane.alignment="CENTER">
+               <children>
+                  <ColorPicker fx:id="colorPicker" layoutX="683.0" layoutY="20.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <MenuBar maxHeight="35.0" minHeight="0.0" prefHeight="33.0" prefWidth="959.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <Menu mnemonicParsing="false" text="commands">
+                    <items>
+                        <MenuItem fx:id="cmSquare" mnemonicParsing="false" text="Square" />
+                        <MenuItem fx:id="cmCircle" mnemonicParsing="false" text="Circle" />
+                      <MenuItem fx:id="cmTriangle" mnemonicParsing="false" text="Triangle" />
+                    </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+*{
+    -fx-base: #424242;
+}
+.button{
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box,black,10,0,0,0);
+}
+
+.first-button {
+    -fx-shape: "M150 0 L75 200 L225 200 Z";
+    -fx-background-color: #475c6c;
+}
+.second-button {
+    -fx-background-color: #475c6c;
+}
+
+.third-button {
+    -fx-shape: "M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #475c6c;
+}
+.forth-button {
+    -fx-shape: "M 600 144 Q 700 260 480 400 Q 260 260 360 140 Q 440 100 480 200 Q 520 100 600 144";
+    -fx-background-color: #ffb8bf;
+}
+.fifth-button {
+     -fx-shape: "M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z ";
+     -fx-background-color: #475c6c;
+ }
+
+/*.sixth-button {*/
+/*    -fx-shape: "M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218";*/
+/*    -fx-background-color: #039BE5;*/
+/*}*/
+
+.sixth-button {
+    -fx-shape: "M 150 400 Q 150 50 400 50 Q 350 50 150 400 ";
+    -fx-background-color: #475c6c;
+}
+.background-color {
+    -fx-background-color: #EAC796;
+}
+
+.pane-color {
+    -fx-background-color: #FDEAC1;
+}
+
+.black-color {
+    -fx-color-label-visible: #039BE5;
+}
+.another-color {
+    -fx-background-color: #FFC0CB;
+}
